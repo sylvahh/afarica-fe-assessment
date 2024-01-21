@@ -2,7 +2,9 @@ import RiskPortfolioList from './risk-portfolio-list';
 
 const RiskPortfolio = () => {
   return (
-    <div className='my-10 pt-10 lg:p-20 bg-black space-y-10 lg:space-y-20 text-white'>
+   
+
+    <section className='my-10 pt-10 lg:p-20 bg-black space-y-10 lg:space-y-20 text-white'>
       <div className='valley-bg text-center lg:rounded-lg  relative'>
         <div className=' absolute w-full h-full top-0' />
         <h1 className=' text-xl lg:text-4xl font-bold py-5'>
@@ -19,7 +21,7 @@ const RiskPortfolio = () => {
         </div>
         <RiskPortfolioList />
       </div>
-    </div>
+    </section>
   );
 };
 

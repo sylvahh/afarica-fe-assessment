@@ -11,22 +11,22 @@ import Footer from '@/components/ui/home/footer/foooter';
 import Button from '@/components/button';
 import MangagedPorpfoliosCard from '@/components/cards/managed-portfolios-card';
 import RiskPortfolioList from '@/components/ui/home/risk-portfolio/risk-portfolio';
-
+import { Fade } from 'react-awesome-reveal';
 const Home = () => {
   return (
-    <React.Fragment>
+    <Fade direction='up' triggerOnce>
       <HeaderVideo />
-      <div className='mt-20 lg:mt-0 lg:p-20 bg-slate-100'>
-        <h1 className='text-3xl lg:text-5xl font-bold text-center lg:text-start'>
-          Professionally managed portfolios,
-          <br className='hidden lg:block' /> tailored to you.
-        </h1>
-        <div className='flex  mt-10 gap-5 flex-wrap lg:flex-nowrap w-full'>
-          {managedPortfolios.map((item, idx) => (
-            <MangagedPorpfoliosCard {...item} key={idx} />
-          ))}
+        <div className='mt-20 lg:mt-0 lg:p-20 bg-slate-100'>
+          <h1 className='text-3xl lg:text-5xl font-bold text-center lg:text-start'>
+            Professionally managed portfolios,
+            <br className='hidden lg:block' /> tailored to you.
+          </h1>
+          <div className='flex  mt-10 gap-5 flex-wrap lg:flex-nowrap w-full'>
+            {managedPortfolios.map((item, idx) => (
+              <MangagedPorpfoliosCard {...item} key={idx} />
+            ))}
+          </div>
         </div>
-      </div>
       <RiskPortfolioList />
 
       <InvestmentTypes />
@@ -71,7 +71,7 @@ const Home = () => {
       </div>
       <FAQAccordion />
       <Footer />
-    </React.Fragment>
+    </Fade>
   );
 };
 
