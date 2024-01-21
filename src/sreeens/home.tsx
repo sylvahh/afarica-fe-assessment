@@ -1,4 +1,3 @@
-import React from 'react';
 import HeaderVideo from '@ui/home/header-video';
 import { managedPortfolios } from '../constants/data';
 import InvestmentTypes from '@ui/home/investment-types';

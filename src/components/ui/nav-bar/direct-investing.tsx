@@ -1,4 +1,3 @@
-import React from 'react';
 import { chevronDown, rightArrow } from '@constants/assests';
 import DropdownWrapper from '@components/dropdown-wrapper';
 
