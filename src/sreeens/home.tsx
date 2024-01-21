@@ -11,25 +11,30 @@ import Button from '@/components/button';
 import MangagedPorpfoliosCard from '@/components/cards/managed-portfolios-card';
 import RiskPortfolioList from '@/components/ui/home/risk-portfolio/risk-portfolio';
 import { Fade } from 'react-awesome-reveal';
+import React from 'react';
 const Home = () => {
   return (
-    <Fade direction='up' triggerOnce>
-      <HeaderVideo />
-        <div className='mt-20 lg:mt-0 lg:p-20 bg-slate-100'>
-          <h1 className='text-3xl lg:text-5xl font-bold text-center lg:text-start'>
-            Professionally managed portfolios,
-            <br className='hidden lg:block' /> tailored to you.
-          </h1>
-          <div className='flex  mt-10 gap-5 flex-wrap lg:flex-nowrap w-full'>
-            {managedPortfolios.map((item, idx) => (
-              <MangagedPorpfoliosCard {...item} key={idx} />
-            ))}
-          </div>
+    <React.Fragment>
+      <Fade direction='down' triggerOnce>
+        <HeaderVideo />
+      </Fade>
+
+      <div className='mt-20 lg:mt-0 lg:p-20 bg-slate-100'>
+        <h1 className='text-3xl lg:text-5xl font-bold text-center lg:text-start'>
+          Professionally managed portfolios,
+          <br className='hidden lg:block' /> tailored to you.
+        </h1>
+        <div className='flex  mt-10 gap-5 flex-wrap lg:flex-nowrap w-full'>
+          {managedPortfolios.map((item, idx) => (
+            <MangagedPorpfoliosCard {...item} key={idx} />
+          ))}
         </div>
-      <RiskPortfolioList />
+      </div>
+      <Fade direction='up' triggerOnce>
+        <RiskPortfolioList />
 
-      <InvestmentTypes />
-
+        <InvestmentTypes />
+      </Fade>
       <div className=' relative flex flex-col justify-center items-center lg:bg-slate-100 p-5 my-10 lg:p-20 space-y-5 text-center lg:text-start'>
         <h1 className='text-3xl lg:text-5xl font-bold'>Let your taxes pay you for a change.</h1>
         <div className='w-full text-center space-y-5'>
@@ -46,11 +51,11 @@ const Home = () => {
           <img src={sloth} alt='sloth' className='w-[250px]' />
         </div>
       </div>
-
-      <SwitchEasy />
-      <SavingsTypes />
-      <WealthGrowth />
-
+      <Fade direction='up' triggerOnce>
+        <SwitchEasy />
+        <SavingsTypes />
+        <WealthGrowth />
+      </Fade>
       <div className='mb-10 p-5 lg:p-20 bg-[#f9f9f9]'>
         <div className='flex justify-center items-center flex-col px-5 lg:px-10'>
           <div className=' flex w-full'>
@@ -68,9 +73,11 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <FAQAccordion />
+      <Fade direction='up' triggerOnce>
+        <FAQAccordion />
+      </Fade>
       <Footer />
-    </Fade>
+    </React.Fragment>
   );
 };
 
