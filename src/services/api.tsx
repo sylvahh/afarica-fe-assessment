@@ -1,5 +1,5 @@
 
-export const baseUrl = 'http://localhost:8080';
+export const baseUrl = 'https://atafrica-fe-assessment-api.onrender.com';
 type METHODS = 'GET' | 'POST' | 'PATCH' | 'PUT' | 'DELETE';
 export async function makeApiRequest(url: string, method: METHODS, body?: object, token?:string) {
   interface Options extends RequestInit {
