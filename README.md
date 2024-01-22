@@ -1,7 +1,7 @@
 # ATAfrica Frontend Assessment - Client Codebase
 
 **Introduction:**
-Welcome to the ATAfrica Frontend Assessment Client Codebase. This ReactJS project is a demonstration of my skills as a frontend developer, tackling tasks aligned with the responsibilities of a Mid-level Front End Developer role at ATAfrica.
+Welcome to the ATAfrica Frontend Assessment Client Codebase. This ReactJS project is a demonstration of my skills as a front-end developer, tackling tasks aligned with the responsibilities of a Mid-level Front End Developer role at ATAfrica.
 
 **Overview:**
 The project involves building a landing page for a Nigerian RoboAdvisor, inspired by platforms like Wealthfront and Wealthsimple.
@@ -33,7 +33,7 @@ The codebase is organized to ensure modularity and scalability. Key directories 
    - Composed detailed documentation for the entire codebase.
 
 **How to Run Locally:**
-1. Clone the repository: `git clone [repository-url]`
+1. Clone the repository: `git clone https://github.com/sylvahh/afarica-fe-assessment.git`
 2. Navigate to the project directory: `cd atafrica-fe-assessment`
 3. Install dependencies: `npm install`
 4. Run the application: `npm run dev`
