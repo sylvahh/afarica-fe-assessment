@@ -40,7 +40,7 @@ The codebase is organized to ensure modularity and scalability. Key directories 
 5. Open your browser and go to `http://localhost:5173` to view the application.
 
 **Live Demo:**
-Explore the live version of the project at [ATAfrica Frontend Assessment](https://atafrica-fe-assessment-app.onrender.com).
+Explore the live version of the project at [ATAfrica Frontend Assessment](https://sylvahh-afarica-fe-assessment.vercel.app/).
 
 **Acknowledgments:**
 - [Wealthfront](https://www.wealthfront.com/investing) and [Wealthsimple](https://www.wealthsimple.com/en-ca/invest/managed-investing) for inspiration.
