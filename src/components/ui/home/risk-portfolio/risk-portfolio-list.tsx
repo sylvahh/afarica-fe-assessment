@@ -1,23 +1,22 @@
 import React from 'react';
 import RiskRange from './risk-range';
 import { makeApiRequest } from '@/services/api';
-import { STOCKS, } from '@/global.type';
+import { STOCKS } from '@/global.type';
 import spinner from '@/components/spinner';
 import Portfolio from './portfolio';
 
 const RiskPortfolioList = () => {
-    const [risk, setRisk] = React.useState([3]);
-    const [gettingList, setGettingList] = React.useState(true)
+  const [risk, setRisk] = React.useState([3]);
+  const [gettingList, setGettingList] = React.useState(true);
   const [portfolioList, setPortfolioList] = React.useState<STOCKS[]>([]);
   const [filterdPortfolioList, setFilteredPortfolioList] = React.useState<STOCKS[]>([]);
 
   const getPorfolioList = () => {
     makeApiRequest('/v1/stocks', 'GET')
       .then((res) => {
-        console.log(res)
         const stocks = res.data.stocks as STOCKS[];
-          setPortfolioList(stocks);
-          setGettingList(false)
+        setPortfolioList(stocks);
+        setGettingList(false);
       })
       .catch((err) => console.error(err));
   };
