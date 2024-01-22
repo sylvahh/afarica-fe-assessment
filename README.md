@@ -33,7 +33,7 @@ The codebase is organized to ensure modularity and scalability. Key directories 
    - Composed detailed documentation for the entire codebase.
 
 **How to Run Locally:**
-1. Clone the repository: `git clone https://github.com/sylvahh/afarica-fe-assessment.git`
+1. Clone the repository: `git clone https://github.com/sylvahh/atafrica-fe-assessment.git`
 2. Navigate to the project directory: `cd atafrica-fe-assessment`
 3. Install dependencies: `npm install`
 4. Run the application: `npm run dev`
