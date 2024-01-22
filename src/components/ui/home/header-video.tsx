@@ -10,7 +10,7 @@ const HeaderVideo = () => {
           <h1 className='text-3xl lg:text-[58px] leading-tight font-bold '>
             Managed investing made to grow your wealth
           </h1>
-          <p className='lg:text-xl'>
+          <p className='lg:text-xl px-5 lg:px-0'>
             We'll build you a smart, sophisticated investment portfolio <br /> designed to help you achieve your goals.
           </p>
 

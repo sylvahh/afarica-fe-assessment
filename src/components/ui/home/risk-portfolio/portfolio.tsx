@@ -4,11 +4,11 @@ import React from "react";
 
 
 const Portfolio = (item:STOCKS) => {
+  const excludedkeys = ['id', 'risk score'];
     return (
       <React.Fragment>
         <div className='flex flex-col px-5 lg:px-10 gap-3'>
           {Object.entries(item).map(([key, value], idx) => {
-            const excludedkeys = ['id', 'risk score'];
 
             if (!excludedkeys.includes(key.toLocaleLowerCase())) {
               const splittedValue = String(value).split('%');

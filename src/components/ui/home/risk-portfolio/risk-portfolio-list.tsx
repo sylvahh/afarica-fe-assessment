@@ -11,15 +11,17 @@ const RiskPortfolioList = () => {
   const [portfolioList, setPortfolioList] = React.useState<STOCKS[]>([]);
   const [filterdPortfolioList, setFilteredPortfolioList] = React.useState<STOCKS[]>([]);
 
-  const getPorfolioList = () => {
+  const getPorfolioList = React.useCallback(() => {
+    if (portfolioList.length > 0) return;
     makeApiRequest('/v1/stocks', 'GET')
       .then((res) => {
+        console.log('hsh')
         const stocks = res.data.stocks as STOCKS[];
         setPortfolioList(stocks);
         setGettingList(false);
       })
       .catch((err) => console.error(err));
-  };
+  }, [portfolioList]);
 
   const updatePortfolioList = React.useCallback(() => {
     const updatedList = portfolioList.filter((item) => item['Risk Score'] === Number(risk[0].toFixed()));
@@ -27,10 +29,10 @@ const RiskPortfolioList = () => {
   }, [risk, portfolioList]);
 
   React.useEffect(() => {
-     getPorfolioList()
+    getPorfolioList();
 
     updatePortfolioList();
-  }, [updatePortfolioList]);
+  }, [updatePortfolioList, getPorfolioList]);
 
   return (
     <div className='bg-[#230b59] relative flex-1 lg:pb-10'>
