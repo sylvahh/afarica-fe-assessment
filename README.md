@@ -8,7 +8,7 @@ The project involves building a landing page for a Nigerian RoboAdvisor, inspire
 
 **Technology Stack:**
 - ReactJS (with TypeScript): A robust and efficient frontend library for building user interfaces.
-- Other Tools: Render for deployment, GitHub for version control.
+- Other Tools: Vercel for deployment, GitHub for version control.
 
 **Project Structure:**
 The codebase is organized to ensure modularity and scalability. Key directories include:
