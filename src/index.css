@@ -37,7 +37,7 @@ a {
 }
 
 .managed-portfolio-card {
-  @apply flex flex-col justify-center items-center mx-auto py-10 p-5 lg:p-10 border gap-5 lg:max-w-[25%] shadow-sm rounded-md bg-white hover:scale-105 hover:shadow-lg hover:border-black cursor-pointer;
+  @apply flex flex-col justify-center items-center mx-auto py-10 p-10 lg:p-10 border gap-5 lg:max-w-[25%] shadow-sm rounded-md bg-white hover:scale-105 hover:shadow-lg hover:border-black cursor-pointer;
 }
 
 .investment-types_card {
