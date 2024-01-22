@@ -27,7 +27,7 @@ const RiskPortfolioList = () => {
   }, [risk, portfolioList]);
 
   React.useEffect(() => {
-    window.addEventListener('load', getPorfolioList);
+     getPorfolioList()
 
     updatePortfolioList();
   }, [updatePortfolioList]);
