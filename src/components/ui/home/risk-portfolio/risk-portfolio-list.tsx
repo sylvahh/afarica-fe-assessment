@@ -14,6 +14,7 @@ const RiskPortfolioList = () => {
   const getPorfolioList = () => {
     makeApiRequest('/v1/stocks', 'GET')
       .then((res) => {
+        console.log(res)
         const stocks = res.data.stocks as STOCKS[];
           setPortfolioList(stocks);
           setGettingList(false)

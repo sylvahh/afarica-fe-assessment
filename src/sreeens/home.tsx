@@ -9,7 +9,7 @@ import FAQAccordion from '@ui/home/faq-accordion';
 import Footer from '@/components/ui/home/footer/foooter';
 import Button from '@/components/button';
 import MangagedPorpfoliosCard from '@/components/cards/managed-portfolios-card';
-import RiskPortfolioList from '@/components/ui/home/risk-portfolio/risk-portfolio';
+import RiskPortfolio from '@/components/ui/home/risk-portfolio/risk-portfolio';
 import { Fade } from 'react-awesome-reveal';
 import React from 'react';
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
         <HeaderVideo />
       </Fade>
 
-      <div className='mt-20 lg:mt-0 lg:p-20 bg-slate-100'>
+      <div className='my-20 lg:mt-0 lg:p-20 bg-slate-100'>
         <h1 className='text-3xl lg:text-5xl font-bold text-center lg:text-start'>
           Professionally managed portfolios,
           <br className='hidden lg:block' /> tailored to you.
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
       </div>
       <Fade direction='up' triggerOnce>
-        <RiskPortfolioList />
+        <RiskPortfolio />
 
         <InvestmentTypes />
       </Fade>

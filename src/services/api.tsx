@@ -1,5 +1,5 @@
 
-export const baseUrl = 'https://atafrica-fe-assessment-api.onrender.com';
+export const baseUrl = import.meta.env.VITE_BASE_URL;
 type METHODS = 'GET' | 'POST' | 'PATCH' | 'PUT' | 'DELETE';
 export async function makeApiRequest(url: string, method: METHODS, body?: object, token?:string) {
   interface Options extends RequestInit {
